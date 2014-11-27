@@ -18,8 +18,8 @@
 ;;;  If not, see the GNU [site](http://www.gnu.org/licenses/).
 
 
-(asdf:defsystem :de.setf.utility.mime
-  :depends-on (:de.setf.utility)
+(asdf:defsystem mime
+  :depends-on (:utility)
   :description "de.setf.utility.mime defines singletons to designate mime content types and
  codecs for the related content encodings."
   :serial t
@@ -37,7 +37,5 @@
    Each type is defined as a singleton in a major/minor type lattice and bound to a
  global variable with the same name. The `text/*` types include a slot for a content encoding
  name.")
-
-
 
 :de.setf.utility.mime

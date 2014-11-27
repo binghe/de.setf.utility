@@ -90,6 +90,7 @@
    :application/octet-stream
    :application/xml
    :application/rdf+xml
+   :application/xhtml+xml
    :binary
    :binary-mime-type-p
    :graphviz

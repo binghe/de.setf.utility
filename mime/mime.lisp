@@ -382,7 +382,7 @@
     (:method ((old standard-object) (new standard-object) &rest args)
       (apply #'shared-initialize new t args))
 
-    (:method de.setf.utility::initialize-clone ((old mime:text/*) (new mime:text/*) &rest args
+    (:method ((old mime:text/*) (new mime:text/*) &rest args
                                                 &key (charset (slot-value old 'charset)))
              (apply #'call-next-method old new
                     :charset charset

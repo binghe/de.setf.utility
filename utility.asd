@@ -21,8 +21,8 @@
 (setq hcl:*packages-for-warn-on-redefinition*
       (remove "KEYWORD" hcl:*packages-for-warn-on-redefinition* :test 'string-equal))
 
-(asdf:defsystem :de.setf.utility
-  :version "20100214-1.0"
+(asdf:defsystem utility
+  :version "1.0"
   ;;:pathname (when (ignore-errors (logical-pathname-translations "LIBRARY"))
   ;;            (make-pathname :host "LIBRARY"
   ;;                           :directory '(:absolute "de" "setf" "utility")))
